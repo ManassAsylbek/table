@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Создание таблиц и форм</title>
+</head>
+<body>
+
+<table border="2">
+	<colgroup>
+    <col span="2" style="background:khaki;"><!-- С помощью этой конструкции задаем цвет фона для первых двух столбцов таблицы-->
+    <col style="background-color:LightCyan"><!-- Задаем цвет фона для следующего (одного) столбца таблицы-->
+  </colgroup>
+
+    <caption>Концтовары</caption>
+	<thead >
+		<tr>
+			<th>№ п/п</th>
+			<th>Наименование</th>
+			<th>Цена,руб</th>
+		</tr>
+	</thead>
+	
+	<tbody></tbody>
+	<tr>
+		<td>1</td>
+		<td>Карандаш цветной</td>
+		<td>20,00</td>
+		
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>линейка 20 см</td>
+		<td rowspan="2">30,00</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>линейка 40 см</td>
+		
+	</tr>
+	<tr>
+		<td colspan="2" style="text-align:center;">итого</td>
+		<td>80.00</td>
+	</tr>
+	
+	</tbody>
+	
+</table>
+<br>
+<br>
+
+<form>
+	
+	<input type="text"> 
+	<br>
+	<br>
+	<input type="password">
+	<br>
+	<br>
+	<input type="number">
+	<br>
+	<br>
+	<input type="file">
+	<br>
+	<br>
+	<input type="email">
+	<br>
+	<br>
+	<input type="date">
+	<br>
+	<br>
+	<input type="color">
+	<br>
+	<br>
+	<input type="hidden">
+
+</form>	
+
+</body>
+</html>
